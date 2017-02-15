@@ -1,6 +1,6 @@
 <?php
 
-  //bab 1 koneksi dengan database
+  //bab 2 prepare dan bindParam
   $host="localhost";
   $dbname="coba";
 
