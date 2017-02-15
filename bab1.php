@@ -1,6 +1,6 @@
 <?php
 
-  //bab 1 koneksi dengan database
+  //bab 1 digunakan untuk koneksi dengan database
   $host="localhost";
   $dbname="coba";
 
