@@ -1,5 +1,7 @@
 <?php
 
+
+
   //bab 3 fetching
 
   $host="localhost";
