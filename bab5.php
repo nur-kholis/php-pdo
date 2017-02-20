@@ -12,6 +12,8 @@
   $id_user=0;
 
   $pdo=new PDO ("mysql:dbname=$dbname;host=$host", $user,$password);
+  // Mengatur Error Mode di PDO untuk segera menampilkan exception ketika ada kesalahan
+  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
   if ($pdo) {
     $stmt=$pdo->prepare("SELECT * FROM user");

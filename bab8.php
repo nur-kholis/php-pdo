@@ -9,7 +9,7 @@
   $password="";
 
   /*contoh sql injection*/
-  /*try {
+/*  try {
 
     $id_user=2;
     $username="hideen' OR 1='1";
@@ -28,7 +28,7 @@
 
 
   /*metode pertama dengan quote*/
-  /*try {
+  try {
 
     $id_user=2;
     $username="hideen' OR 1='1";
@@ -50,7 +50,7 @@
 
   } catch (PDOException $e) {
     echo $e->getMessage();
-  }*/
+  }
 
   /*metode kedua dengan bindvalue*/
   /*try {
@@ -80,7 +80,7 @@
 
   /*metode ketiga menggunakan bindParam*/
 
-  try {
+/*  try {
 
     $id_user=2;
     $username="kholis";
@@ -105,5 +105,5 @@
 
   } catch (PDOException $e) {
     echo $e->getMessage();
-  }
+  }*/
 ?>

@@ -1,6 +1,5 @@
 <?php
 
-  //bab 1 koneksi dengan database
   $host="localhost";
   $dbname="print_online1.0";
 
@@ -13,8 +12,24 @@
     //echo "koneksi berhasil";
     echo "<pre>";
     foreach ($pdo->query("SELECT * FROM pengguna WHERE nama_pengguna LIKE 'h%'")as $b) {
-      print_r($b);
+     // print_r($b);
     }
+  }
+    $array = array('nur' , 'kholis');
+      
+      
+  coba($array);
+
+  function coba($a){
+    if(is_array($a)){
+      echo "array";
+      foreach ($a as $key => $value) {
+        echo $value;
+      }
+    }else{
+      echo "string";
+    }
+    
   }
 
 
